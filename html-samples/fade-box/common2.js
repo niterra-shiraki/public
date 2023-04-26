@@ -28,15 +28,17 @@ class wsAccordion {
             $this.target = $this.button.parentNode;
 
             // 隠れているテキストを含めた高さを取得
-            var test = document.createElement('div');
-            test.classList.add('ws-fade-box');
-            test.setAttribute('style', 'visibility: hidden');
-            test.innerHTML = $this.target.innerHTML;
+            var tmpDiv = document.createElement('div');
+            tmpDiv.classList.add('ws-fade-box');
+            tmpDiv.setAttribute('style', 'visibility: hidden');
+            tmpDiv.innerHTML = $this.target.innerHTML;
 
-            $this.target.parentNode.insertBefore( test, $this.target );
-            var w = test.offsetWidth;
-            var h = test.offsetHeight;
-            $this.target.parentNode.removeChild(test);
+            // $this.target.parentNode.insertBefore(tmpDiv, $this.target);
+            $this.target.parentNode.appendChild(tmpDiv);
+            var w = tmpDiv.offsetWidth;
+            var h = tmpDiv.offsetHeight;
+            // $this.target.parentNode.removeChild(tmpDiv);
+            $this.target.parentNode.removeChild(tmpDiv);
 
             // フェードボックスを開くアニメーションを開始
             $this.startH  = $this.target.offsetHeight;
