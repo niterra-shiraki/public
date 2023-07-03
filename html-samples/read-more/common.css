@@ -86,4 +86,3 @@ body {
 .ws-read-more > label.ws-read-more-label:has(> input[type="checkbox"]:checked) {
     display: none;
 }
-
