@@ -1,7 +1,7 @@
-# public
-Public sample codes written by shiraki
+# 公開用サンプルコード
+HTMLやWordPressの公開用サンプルコード
 
-## html-samples
+## [html-samples](./html-samples/)
 HTMLサンプルコード
 
 ## wordpress-sample
