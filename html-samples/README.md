@@ -27,3 +27,6 @@ swiper.jsによるカルーセル（スライダー）のサンプル
 
 ## [wait-modal](./wait-modal/)
 待ちアニメーションのサンプル
+
+## [upload-image](./upload-image/)
+画像をアップロードしてすぐプレビュー
