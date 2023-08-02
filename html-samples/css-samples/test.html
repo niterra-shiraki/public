@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<!-- あ -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=yes" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <title> CSS Samples | ほわいとソフトウェア </title>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <style>
+    .css-sample {
+        margin: 4.0rem auto;
+    }
+    #css-sample-btn-1 {
+        position: relative;
+        width: max-content;
+        padding: 2.0rem 4.0rem;
+        border: 1px solid #999;
+        background: #ffc;
+    }
+    #css-sample-btn-1::before {
+        position: absolute;
+        content: "";
+        top: 1.0rem;
+        left: 1.0rem;
+        width: calc( 100% - 2.0rem );
+        height: calc( 100% - 2.0rem );
+        border: 1px solid #999;
+        clip-path: polygon( 0 0,
+                            1.0rem 0,
+                            100% calc( 100% - 1.0rem ),
+                            100% 100%,
+                            calc( 100% - 1.0rem) 100%,
+                            0% 1.0rem );
+    }
+  </style>
+</head>
+
+<body>
+
+  <section id="css-sample-btn-1" class="css-sample">
+    ほげほげ
+  </section>
+
+</body>
+
+</html>
